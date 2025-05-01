@@ -18,7 +18,6 @@ function Dashboard() {
   const GetResumesList=()=>{
     GlobalApi.GetUserResumes(user?.primaryEmailAddress?.emailAddress)
     .then(resp=>{
-      console.log(resp.data.data)
       setResumeList(resp.data.data);
     })
   }
